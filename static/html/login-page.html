@@ -161,7 +161,7 @@
                                         <div class="tab-content">
                                             <div id="sectionA" class="tab-pane fade in active">
                                                 <div class="innter-form">
-                                                    <form id="login" name="LoginForm" class="innate-form" method="post">
+                                                    <form id="login" name="LoginForm" class="innate-form" method="post" action="{{authorizeURL}}">
                                                         <div id="LoginForm">
                                                             <div class="login-label">Log in</div>
                                                             <br>
@@ -176,6 +176,7 @@
                                                         </div>
                                                         <div>
                                                             <input type="hidden" name="CSRFToken" value="null" />
+                                                            <input type="hidden" name="returnTo" value="{{authorizeURL}}" />
                                                         </div>
                                                     </form>
                                                     {{#customProfileConfig}}
