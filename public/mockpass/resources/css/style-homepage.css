@@ -13,6 +13,31 @@ body {
     overflow-x: hidden;
 }
 
+.username-select-wrapper {
+    position: relative;
+}
+
+.username-select-wrapper::after {
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 11px solid #000;
+    pointer-events: none;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+#id-input {
+    padding-right: 48px !important;
+}
+
+#id-input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
 .sp-img-bg {
     background: url(../../resources/img/background/large-device/sp_bg.jpg) no-repeat bottom; 
     -webkit-background-size: cover;
