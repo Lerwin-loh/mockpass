@@ -404,13 +404,13 @@ a.mockpass-logo:focus {
     outline: none;
 }
 .mockpass-logo {
-    width: 180px;
-    height: 84px;
+    width: 250px;
+    height: 44px;
     float: left;
-    background: url("../../resources/img/logo/mockpass-logo.png");
+    background: url("../../resources/img/logo/singpass-logo-new.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0;
+    background-position: left center;
     text-indent: -9999px;
     margin: 0;
 }
@@ -421,13 +421,13 @@ a.mockpass-logo-white:focus {
     outline: none;
 }
 .mockpass-logo-white {
-    width: 180px;
-    height: 84px;
+    width: 250px;
+    height: 44px;
     float: left;
-    background: url("../../resources/img/logo/mockpass-logo-white.png");
+    background: url("../../resources/img/logo/singpass-logo-new.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0;
+    background-position: left center;
     text-indent: -9999px;
     margin: 0;
 }

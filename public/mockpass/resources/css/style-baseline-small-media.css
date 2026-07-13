@@ -16,11 +16,13 @@
         top: -5px;
         height: 49px;
         padding: 0;
-        width: 122px;
+        width: 180px;
         background-size: contain!important;
-        background: url("../../resources/img/logo/mockpass-logo.png");
+        background: url("../../resources/img/logo/singpass-logo-new.png");
         background-repeat: no-repeat;
+        background-position: center;
         margin: 0 auto;
+        text-indent: -9999px;
     }
     /*  ---  Mobile Header End  --- */
 
@@ -339,11 +341,13 @@
         top: -5px;
         height: 49px;
         padding: 0;
-        width: 122px;
-        background: url("../../resources/img/logo/mockpass-logo.png");
+        width: 180px;
+        background: url("../../resources/img/logo/singpass-logo-new.png");
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
         margin: 0 auto;
+        text-indent: -9999px;
     }
     .mNavigation_body p {
         padding: 18px 5px;
