@@ -146,9 +146,7 @@
 ------------------------------------------------ */
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
     .sp-img-bg {
-        background:
-            linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.45)),
-            linear-gradient(135deg, #f7c86b 0%, #dfe7ef 45%, #354b63 100%);
+        background: url(../../resources/img/background/small-device/mobile-sp-bg.jpg) no-repeat bottom;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -221,9 +219,7 @@
 ------------------------------------------------ */
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
     .sp-img-bg {
-        background:
-            linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.45)),
-            linear-gradient(135deg, #f7c86b 0%, #dfe7ef 45%, #354b63 100%);
+        background: url(../../resources/img/background/small-device/mobile-landscape-sp-bg.jpg) no-repeat bottom;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -389,9 +385,7 @@
 ------------------------------------------------ */
 @media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
     .sp-img-bg {
-        background:
-            linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.45)),
-            linear-gradient(135deg, #f7c86b 0%, #dfe7ef 45%, #354b63 100%);
+        background: url(../../resources/img/background/medium-device/ipad-bg.jpg) no-repeat bottom;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -433,9 +427,7 @@
 ------------------------------------------------ */
 @media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
     .sp-img-bg {
-        background:
-            linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.45)),
-            linear-gradient(135deg, #f7c86b 0%, #dfe7ef 45%, #354b63 100%);
+        background: url(../../resources/img/background/medium-device/ipad-landscape-sp-bg.jpg) no-repeat bottom;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -477,9 +469,7 @@
 ------------------------------------------------ */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .sp-img-bg {
-        background:
-            linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.45)),
-            linear-gradient(135deg, #f7c86b 0%, #dfe7ef 45%, #354b63 100%);
+        background: url(../../resources/img/background/medium-device/ipad-landscape-sp-bg.jpg) no-repeat bottom;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -519,9 +509,7 @@
 ------------------------------------------------ */
 @media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
     .sp-img-bg {
-        background:
-            linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.45)),
-            linear-gradient(135deg, #f7c86b 0%, #dfe7ef 45%, #354b63 100%);
+        background: url(../../resources/img/background/medium-device/ipad-bg.jpg) no-repeat bottom;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -564,9 +552,7 @@
 @media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
 
     .sp-img-bg {
-        background:
-            linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.45)),
-            linear-gradient(135deg, #f7c86b 0%, #dfe7ef 45%, #354b63 100%);
+        background: url(../../resources/img/background/medium-device/ipad-landscape-sp-bg.jpg) no-repeat bottom;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

@@ -3,54 +3,303 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Unauthorised</title>
+    <title>SingPass Login Unsuccessful</title>
     <link rel="icon" type="img/ico" href="/mockpass/resources/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/mockpass/resources/plugins/bootstrap-3.4.1/css/bootstrap.min.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/mockpass/resources/css/style-main.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/mockpass/resources/css/common.css" media="all">
     <style>
-      body {
-        background: #f7f7f7;
-        color: #2a2d33;
+      :root {
+        --singpass-red: #e60012;
+        --singpass-red-dark: #c90010;
+        --ink: #202124;
+        --muted: #5f6368;
+        --line: #dedede;
+        --surface: #ffffff;
+        --page: #f4f4f4;
       }
 
-      .unauthorised-page {
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(244, 244, 244, 0.98)),
+          radial-gradient(circle at top left, rgba(230, 0, 18, 0.08), transparent 32%);
+        color: var(--ink);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      .topbar {
+        background: var(--surface);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topbar-inner {
         align-items: center;
         display: flex;
-        min-height: 100vh;
-        padding: 24px;
+        height: 76px;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1120px;
+        padding: 0 24px;
       }
 
-      .unauthorised-panel {
+      .brand {
+        align-items: center;
+        color: #111;
+        display: flex;
+        font-size: 32px;
+        font-weight: 700;
+        gap: 12px;
+        letter-spacing: 0;
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        background: var(--singpass-red);
+        border-radius: 3px;
+        display: inline-block;
+        height: 28px;
+        position: relative;
+        width: 28px;
+      }
+
+      .brand-mark::after {
+        background: #111;
+        content: "";
+        height: 6px;
+        left: 36px;
+        position: absolute;
+        top: 11px;
+        width: 42px;
+      }
+
+      .utility {
+        color: #444;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+
+      .alert-strip {
         background: #fff;
-        border: 1px solid #ddd;
-        border-radius: 5px;
+        border-bottom: 1px solid #ececec;
+      }
+
+      .alert-inner {
         margin: 0 auto;
-        max-width: 520px;
-        padding: 32px;
-        text-align: center;
+        max-width: 1120px;
+        padding: 12px 24px;
+      }
+
+      .alert-title {
+        color: var(--singpass-red);
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+
+      .alert-copy {
+        color: #222;
+        font-size: 15px;
+        margin: 0;
+      }
+
+      .page {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: calc(100vh - 132px);
+        padding: 48px 24px;
+      }
+
+      .panel {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        box-shadow: 0 18px 46px rgba(32, 33, 36, 0.12);
+        max-width: 560px;
+        overflow: hidden;
         width: 100%;
       }
 
-      .unauthorised-panel h1 {
+      .panel-accent {
+        background: var(--singpass-red);
+        height: 6px;
+      }
+
+      .panel-body {
+        padding: 40px 42px 36px;
+        text-align: center;
+      }
+
+      .status-icon {
+        align-items: center;
+        background: #fff5f5;
+        border: 2px solid #ffd1d1;
+        border-radius: 50%;
+        color: var(--singpass-red);
+        display: inline-flex;
+        font-size: 34px;
+        font-weight: 700;
+        height: 72px;
+        justify-content: center;
+        margin-bottom: 22px;
+        width: 72px;
+      }
+
+      h1 {
+        color: var(--ink);
         font-size: 28px;
-        font-weight: 600;
+        font-weight: 700;
+        line-height: 1.25;
         margin: 0 0 12px;
       }
 
-      .unauthorised-panel p {
-        color: #555;
+      .message {
+        color: var(--muted);
         font-size: 16px;
-        margin: 0;
+        line-height: 1.55;
+        margin: 0 auto 28px;
+        max-width: 430px;
+      }
+
+      .actions {
+        display: flex;
+        justify-content: center;
+      }
+
+      .primary-button {
+        background: var(--singpass-red);
+        border: 0;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        min-height: 48px;
+        min-width: 220px;
+        padding: 13px 24px;
+      }
+
+      .primary-button:hover,
+      .primary-button:focus {
+        background: var(--singpass-red-dark);
+        outline: 3px solid rgba(230, 0, 18, 0.2);
+        outline-offset: 2px;
+      }
+
+      .support {
+        border-top: 1px solid #eeeeee;
+        color: #666;
+        font-size: 13px;
+        margin: 32px -42px -36px;
+        padding: 18px 32px;
+      }
+
+      .footer {
+        color: #555;
+        font-size: 13px;
+        margin: 0 auto;
+        max-width: 1120px;
+        padding: 18px 24px 26px;
+      }
+
+      @media (max-width: 640px) {
+        .topbar-inner {
+          height: 64px;
+        }
+
+        .brand {
+          font-size: 26px;
+        }
+
+        .utility {
+          display: none;
+        }
+
+        .page {
+          min-height: calc(100vh - 120px);
+          padding: 28px 16px;
+        }
+
+        .panel-body {
+          padding: 32px 24px 28px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        .primary-button {
+          width: 100%;
+        }
+
+        .support {
+          margin: 28px -24px -28px;
+        }
       }
     </style>
   </head>
   <body>
-    <main class="unauthorised-page">
-      <section class="unauthorised-panel" aria-labelledby="unauthorised-title">
-        <h1 id="unauthorised-title">Unauthorised</h1>
-        <p>You are not authorised to continue with this login request.</p>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand" aria-label="SingPass">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>SingPass</span>
+        </div>
+        <div class="utility">A A A &nbsp; Contact Us | Feedback | FAQ</div>
+      </div>
+    </header>
+
+    <section class="alert-strip" aria-label="Advisory note">
+      <div class="alert-inner">
+        <span class="alert-title">Advisory Note</span>
+        <p class="alert-copy">Do not share your username, password and 2FA details with anyone.</p>
+      </div>
+    </section>
+
+    <main class="page">
+      <section class="panel" aria-labelledby="unauthorised-title">
+        <div class="panel-accent"></div>
+        <div class="panel-body">
+          <div class="status-icon" aria-hidden="true">!</div>
+          <h1 id="unauthorised-title">Login unsuccessful</h1>
+          <p class="message">
+            We could not verify this login request. The session may have expired
+            or the request was submitted incorrectly.
+          </p>
+          <div class="actions">
+            <button class="primary-button" type="button" onclick="restartSingPassLogin()">
+              Try again with SingPass
+            </button>
+          </div>
+          <div class="support">
+            For your security, start a new login session before continuing.
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer class="footer">
+      Privacy Statement | Terms of Use | Rate This Website
+    </footer>
+
+    <script>
+      function restartSingPassLogin() {
+        const params = new URLSearchParams(window.location.search);
+        const returnTo = params.get("returnTo") || "/v2/oauth/authorize";
+        const target = new URL(returnTo, window.location.origin);
+
+        if (target.origin !== window.location.origin || target.pathname !== "/v2/oauth/authorize") {
+          target.pathname = "/v2/oauth/authorize";
+          target.search = "";
+        }
+
+        target.searchParams.set("login_retry", Date.now().toString());
+        window.location.assign(target.pathname + target.search);
+      }
+    </script>
   </body>
 </html>
