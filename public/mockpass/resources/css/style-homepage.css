@@ -38,6 +38,25 @@ body {
     opacity: 0;
 }
 
+.login-submit-btn {
+    background: #E11F26;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    height: 44px;
+    margin: 18px 0 6px;
+    width: 100%;
+}
+
+.login-submit-btn:hover,
+.login-submit-btn:focus {
+    background: #c91920;
+    outline: none;
+}
+
 .sp-img-bg {
     background: url(../../resources/img/background/large-device/sp_bg.jpg) no-repeat bottom; 
     -webkit-background-size: cover;
