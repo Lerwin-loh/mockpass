@@ -407,12 +407,11 @@ a.mockpass-logo:focus {
     width: 180px;
     height: 84px;
     float: left;
-    background: none;
-    color: #000;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 84px;
-    text-indent: 0;
+    background: url("../../resources/img/logo/mockpass-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0;
+    text-indent: -9999px;
     margin: 0;
 }
 .mockpass-logo-white-container {
