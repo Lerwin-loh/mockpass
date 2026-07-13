@@ -17,9 +17,11 @@
         height: 49px;
         padding: 0;
         width: 122px;
-        background-size: contain!important;
-        background: url("../../resources/img/logo/mockpass-logo.png");
-        background-repeat: no-repeat;
+        background: none;
+        color: #000;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 49px;
         margin: 0 auto;
     }
     /*  ---  Mobile Header End  --- */
@@ -340,9 +342,11 @@
         height: 49px;
         padding: 0;
         width: 122px;
-        background: url("../../resources/img/logo/mockpass-logo.png");
-        background-size: contain;
-        background-repeat: no-repeat;
+        background: none;
+        color: #000;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 49px;
         margin: 0 auto;
     }
     .mNavigation_body p {
