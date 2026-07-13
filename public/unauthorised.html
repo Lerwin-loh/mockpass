@@ -292,12 +292,6 @@
         const returnTo = params.get("returnTo") || "/v2/oauth/authorize";
         const target = new URL(returnTo, window.location.origin);
 
-        if (target.origin !== window.location.origin || target.pathname !== "/v2/oauth/authorize") {
-          target.pathname = "/v2/oauth/authorize";
-          target.search = "";
-        }
-
-        target.searchParams.set("login_retry", Date.now().toString());
         window.location.assign(target.pathname + target.search);
       }
     </script>
