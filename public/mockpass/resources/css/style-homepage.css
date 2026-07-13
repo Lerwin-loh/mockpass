@@ -14,7 +14,9 @@ body {
 }
 
 .sp-img-bg {
-    background: url(../../resources/img/background/large-device/sp_bg.jpg) no-repeat bottom; 
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.45)),
+        linear-gradient(135deg, #f7c86b 0%, #dfe7ef 45%, #354b63 100%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

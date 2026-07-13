@@ -268,14 +268,15 @@ a.placeholder-logo:focus {
 }
 .placeholder-logo {
     width: 250px;
-    height: 200px;
+    height: 40px;
     float: right;
-    background:
-    url("../../resources/img/logo/mockpass-placeholder-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 26px 0;
-    text-indent: -9999px;
+    background: none;
+    color: #111;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: right;
+    text-indent: 0;
 }
 a.placeholder-logo {
     height: 40px;
@@ -407,11 +408,12 @@ a.mockpass-logo:focus {
     width: 180px;
     height: 84px;
     float: left;
-    background: url("../../resources/img/logo/mockpass-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0;
-    text-indent: -9999px;
+    background: none;
+    color: #000;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 84px;
+    text-indent: 0;
     margin: 0;
 }
 .mockpass-logo-white-container {
@@ -424,11 +426,12 @@ a.mockpass-logo-white:focus {
     width: 180px;
     height: 84px;
     float: left;
-    background: url("../../resources/img/logo/mockpass-logo-white.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0;
-    text-indent: -9999px;
+    background: none;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 84px;
+    text-indent: 0;
     margin: 0;
 }
 .font-small {
